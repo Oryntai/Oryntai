@@ -1,0 +1,33 @@
+name: Profile stats
+
+# Re-renders the activity panel (assets/stats-*.svg) from the GitHub API once a day.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Render activity panel
+        run: python3 scripts/readme_assets.py stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-*.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "Update activity panel"
+          git push

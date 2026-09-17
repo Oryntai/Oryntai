@@ -1,68 +1,49 @@
-<p align="center">
-  <img src="assets/header.svg" alt="Oryntai Pazylbekov: Backend · AI integrations · Full-stack" width="100%" />
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img alt="Oryntai Pazylbekov — Python backend developer and AI integration engineer, Astana, Kazakhstan" src="assets/hero-light.svg" width="100%"></picture>
 
 <p align="center">
-  <b>Backend developer (Python) · AI integration engineer</b><br/>
-  Astana, Kazakhstan
-</p>
-
-<p align="center">
-  <a href="mailto:pazylbekovoryntai@gmail.com"><img src="https://img.shields.io/badge/Email-pazylbekovoryntai%40gmail.com-0F766E?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://t.me/oryntaivez"><img src="https://img.shields.io/badge/Telegram-@oryntaivez-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" /></a>
+  <a href="mailto:pazylbekovoryntai@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg"><img alt="Email: pazylbekovoryntai@gmail.com" src="assets/btn-email-light.svg" height="46"></picture></a>
+  <a href="https://t.me/oryntaivez"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-telegram-dark.svg"><img alt="Telegram: @oryntaivez" src="assets/btn-telegram-light.svg" height="46"></picture></a>
 </p>
 
 ## About
 
-I build backend services in Python (FastAPI, Django) and take products all the way through: API and database, web and mobile clients, deployment. Most of my recent work puts LLMs into real products: agents with tools, RAG with citations, MCP servers.
+I build backend services in Python and ship whole products around them. Most of my recent work puts LLMs to work inside real products.
 
-**oqCRM** is the biggest thing I've built so far: a commercial CRM for education centers (music schools, language courses, tutoring centers), written from scratch. Leads, schedules, payments and teacher payroll live in one system. FastAPI + PostgreSQL backend, React web app, React Native (Expo) mobile app. Closed source, live at [oqcrm.kz](https://oqcrm.kz).
+- **Backend:** FastAPI and Django, PostgreSQL, Redis and queues, Docker, CI/CD
+- **AI integrations:** agents with tools, RAG with citations, MCP servers
+- **End to end:** API and database, web and mobile clients, deployment
 
-## Projects
+<a href="https://oqcrm.kz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/oqcrm-dark.svg"><img alt="oqCRM — commercial CRM for education centers, built from scratch: leads, schedules, payments and teacher payroll. FastAPI, PostgreSQL, React, React Native." src="assets/oqcrm-light.svg" width="100%"></picture></a>
 
-| Project | What it does | Stack |
-|---|---|---|
-| [**AgentLink**](https://github.com/Oryntai/AgentLink) | Encrypted peer-to-peer link that lets local Codex and Claude agents talk to each other, no model API required | Node.js · MCP · WebSocket |
-| [**Observer**](https://github.com/Oryntai/tribal-observer) | Pixel-art simulation of two tribes whose rulers are Claude Haiku agents acting through MCP tools | Godot 4 · Python · Claude Agent SDK |
-| [**Salyq AI**](https://github.com/Oryntai/SalyqAI) | Tax consultant for Kazakhstan: plain-language answers with citations to Tax Code articles | FastAPI · React · ChromaDB · OpenAI |
-| [**IoT Security Monitoring**](https://github.com/Oryntai/Diploma) | Diploma project: rule-based device checks plus a PyTorch autoencoder that flags anomalous IoT traffic | FastAPI · PyTorch · MQTT |
-| [**BrainCanvas**](https://github.com/Oryntai/BrainCanvas) · [demo](https://ai-brainstorm-canvas.fly.dev) | Collaborative whiteboard with a voice-activated AI teammate that sees and edits the canvas | React · tldraw · Yjs · OpenAI |
-| [**FIRE**](https://github.com/Oryntai/DataSaur2026) | Hackathon: LLM triage of customer support tickets and routing to the right manager | FastAPI · PostgreSQL · Gemini |
-| [**browser-agent**](https://github.com/Oryntai/browser-agent) | Hackathon: backend for an autonomous LLM agent that drives a real browser | FastAPI · Playwright · SSE |
-| [**Handstick**](https://github.com/Oryntai/handstick) | Hands-free mouse: webcam palm tracking with a gesture toggle | Python · MediaPipe · OpenCV |
+## Featured projects
 
-Also contributed to [Aman AI](https://github.com/amanai-kz/aman-ai), a medical AI platform: consultation reports, PDF export, lab results parsing (RU/KZ).
+<p align="center">
+  <a href="https://github.com/Oryntai/AgentLink"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-agentlink-dark.svg"><img alt="AgentLink — Encrypted peer-to-peer bridge that lets local Codex and Claude agents talk to each other." src="assets/card-agentlink-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Oryntai/tribal-observer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-observer-dark.svg"><img alt="Observer — Two pixel-art tribes whose rulers are Claude Haiku agents acting through MCP tools." src="assets/card-observer-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Oryntai/SalyqAI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-salyq-dark.svg"><img alt="Salyq AI — Tax consultant for Kazakhstan: plain-language answers with citations to Tax Code articles." src="assets/card-salyq-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Oryntai/Diploma"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-iot-dark.svg"><img alt="IoT Security Monitoring — Rule-based device checks plus a PyTorch autoencoder that flags anomalous IoT traffic." src="assets/card-iot-light.svg" width="49%"></picture></a>
+</p>
 
-## Experience
+<p align="center">
+  <a href="https://github.com/Oryntai/BrainCanvas"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-braincanvas-dark.svg"><img alt="BrainCanvas — Whiteboard with a voice-driven AI teammate." src="assets/card-braincanvas-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Oryntai/DataSaur2026"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-fire-dark.svg"><img alt="FIRE — LLM triage and routing of support tickets." src="assets/card-fire-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Oryntai/browser-agent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-browser-agent-dark.svg"><img alt="browser-agent — Backend for an autonomous LLM browser agent." src="assets/card-browser-agent-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Oryntai/handstick"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-handstick-dark.svg"><img alt="Handstick — Hands-free mouse via webcam palm tracking." src="assets/card-handstick-light.svg" width="49%"></picture></a>
+</p>
 
-**Future.AI**, Developer / Integration Engineer · 19 months<br/>
-AI solutions and backend services, REST API design, integrations with external APIs, process automation.
-
-**Freelance**, Developer · 1 year<br/>
-Business bots, web apps, REST APIs and websites for clients, from spec to production.
-
-**AGI Center**, Backend/Web Developer Intern · 1.5 months<br/>
-Frontend and backend tasks on genetics and healthcare projects.
+<p align="center"><sub>BrainCanvas has a <a href="https://ai-brainstorm-canvas.fly.dev">live demo</a> · Also contributed to <a href="https://github.com/amanai-kz/aman-ai">Aman AI</a>, a medical AI platform</sub></p>
 
 ## Stack
 
-<!-- assets/stack.svg is a snapshot of https://skillicons.dev/icons?i=py,fastapi,django,postgres,redis,rabbitmq,docker,nginx,linux,githubactions,ts,nodejs,react,vue,nuxtjs,tailwind,pytorch,opencv&perline=9 -->
-<img src="assets/stack.svg" alt="Python, FastAPI, Django, PostgreSQL, Redis, RabbitMQ, Docker, Nginx, Linux, GitHub Actions, TypeScript, Node.js, React, Vue, Nuxt, Tailwind, PyTorch, OpenCV" />
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img alt="Stack — Backend: Python, FastAPI, Django, PostgreSQL, Redis, RabbitMQ, Celery, SQLAlchemy, Pydantic; AI & ML: OpenAI, Claude, Gemini, MCP, RAG, PyTorch, OpenCV; Frontend: TypeScript, React, Vue, Nuxt, Tailwind CSS, React Native; Infra & tools: Docker, Nginx, Linux, GitHub Actions, Node.js, pytest, Playwright" src="assets/stack-light.svg" width="100%"></picture>
 
-**AI:** OpenAI, Claude (Agent SDK, MCP), Gemini · RAG with ChromaDB · browser agents with Playwright<br/>
-**Also:** SQLAlchemy, Alembic, Pydantic, Celery, pytest, React Native (Expo)
+## Activity
 
-## GitHub
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img alt="GitHub activity: contributions in the last 12 months, contributions per week, pull requests and languages. Updated daily." src="assets/stats-light.svg" width="100%"></picture>
 
-<!-- profile/*.svg are rendered daily by .github/workflows/profile-cards.yml -->
-<img src="profile/stats.svg" alt="GitHub stats" height="165" /> <img src="profile/top-langs.svg" alt="Top languages" height="165" />
+## Experience & education
 
-## Education
-
-**Astana IT University**, B.Sc. in Information Security, 2023–2026<br/>
-Diploma: [an intelligent system for monitoring the security of IoT devices](https://github.com/Oryntai/Diploma)
-
-**Languages:** Kazakh (native), Russian (fluent), English (B2)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg"><img alt="Experience: Future.AI, Developer and Integration Engineer, 19 months; Freelance developer, 1 year; AGI Center, Backend/Web Developer Intern, 1.5 months. Education: Astana IT University, B.Sc. in Information Security, 2023–2026. Languages: Kazakh (native), Russian (fluent), English (B2)." src="assets/timeline-light.svg" width="100%"></picture>
 
 <details>
 <summary><b>По-русски</b></summary>
@@ -75,3 +56,5 @@ Python-бэкенд-разработчик из Астаны. Пишу серв�
 Связь: [pazylbekovoryntai@gmail.com](mailto:pazylbekovoryntai@gmail.com) · Telegram [@oryntaivez](https://t.me/oryntaivez)
 
 </details>
+
+<!-- The SVGs in assets/ come from scripts/readme_assets.py; stats-*.svg is refreshed daily by .github/workflows/profile-stats.yml -->
