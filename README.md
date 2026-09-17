@@ -1,110 +1,77 @@
-# Oryntai Pazylbekov
-**Backend Developer (Python: Django, FastAPI) • Integration Engineer**  
-Astana, Kazakhstan
+<p align="center">
+  <img src="assets/header.svg" alt="Oryntai Pazylbekov: Backend · AI integrations · Full-stack" width="100%" />
+</p>
 
-![Profile Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:1F2937&height=120&section=header&text=Backend%20%7C%20REST%20API%20%7C%20Integrations&fontColor=ffffff&fontSize=26&animation=fadeIn)
+<p align="center">
+  <b>Backend developer (Python) · AI integration engineer</b><br/>
+  Astana, Kazakhstan
+</p>
 
-Проектирую и развиваю backend-сервисы на Python: REST API, интеграции с внешними системами, автоматизация и надежная серверная логика для production-среды.
+<p align="center">
+  <a href="mailto:pazylbekovoryntai@gmail.com"><img src="https://img.shields.io/badge/Email-pazylbekovoryntai%40gmail.com-0F766E?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://t.me/oryntaivez"><img src="https://img.shields.io/badge/Telegram-@oryntaivez-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram" /></a>
+</p>
 
-**Контакты:** [pazylbekovoryntai@gmail.com](mailto:pazylbekovoryntai@gmail.com) • [@oryntaivez](https://t.me/oryntaivez)
+## About
 
-## At a Glance
-- Python backend: Django, FastAPI, REST APIs
-- Integration & automation: внешние API, AI-related сценарии
-- Data layer: PostgreSQL + Redis + Celery
-- Deployment mindset: Docker + CI/CD практики
-- Quality focus: code review, pytest, ответственность за тесты и проверку
+I build backend services in Python (FastAPI, Django) and take products all the way through: API and database, web and mobile clients, deployment. Most of my recent work puts LLMs into real products: agents with tools, RAG with citations, MCP servers.
 
-## Tech Stack
-**Backend & API**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![DRF](https://img.shields.io/badge/Django_REST_Framework-CA4245?style=flat-square)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-0A0A0A?style=flat-square)
+**oqCRM** is the biggest thing I've built so far: a commercial CRM for education centers (music schools, language courses, tutoring centers), written from scratch. Leads, schedules, payments and teacher payroll live in one system. FastAPI + PostgreSQL backend, React web app, React Native (Expo) mobile app. Closed source, live at [oqcrm.kz](https://oqcrm.kz).
 
-**Auth & API Docs**  
-![JWT](https://img.shields.io/badge/JWT-SimpleJWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![OpenAPI](https://img.shields.io/badge/OpenAPI-Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black)
-![drf-spectacular](https://img.shields.io/badge/drf--spectacular-API_Schema-4B5563?style=flat-square)
+## Projects
 
-**Async, DB, Data**  
-![Celery](https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![psycopg3](https://img.shields.io/badge/psycopg3-2D3748?style=flat-square)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+| Project | What it does | Stack |
+|---|---|---|
+| [**AgentLink**](https://github.com/Oryntai/AgentLink) | Encrypted peer-to-peer link that lets local Codex and Claude agents talk to each other, no model API required | Node.js · MCP · WebSocket |
+| [**Observer**](https://github.com/Oryntai/tribal-observer) | Pixel-art simulation of two tribes whose rulers are Claude Haiku agents acting through MCP tools | Godot 4 · Python · Claude Agent SDK |
+| [**Salyq AI**](https://github.com/Oryntai/SalyqAI) | Tax consultant for Kazakhstan: plain-language answers with citations to Tax Code articles | FastAPI · React · ChromaDB · OpenAI |
+| [**IoT Security Monitoring**](https://github.com/Oryntai/Diploma) | Diploma project: rule-based device checks plus a PyTorch autoencoder that flags anomalous IoT traffic | FastAPI · PyTorch · MQTT |
+| [**BrainCanvas**](https://github.com/Oryntai/BrainCanvas) · [demo](https://ai-brainstorm-canvas.fly.dev) | Collaborative whiteboard with a voice-activated AI teammate that sees and edits the canvas | React · tldraw · Yjs · OpenAI |
+| [**FIRE**](https://github.com/Oryntai/DataSaur2026) | Hackathon: LLM triage of customer support tickets and routing to the right manager | FastAPI · PostgreSQL · Gemini |
+| [**browser-agent**](https://github.com/Oryntai/browser-agent) | Hackathon: backend for an autonomous LLM agent that drives a real browser | FastAPI · Playwright · SSE |
+| [**Handstick**](https://github.com/Oryntai/handstick) | Hands-free mouse: webcam palm tracking with a gesture toggle | Python · MediaPipe · OpenCV |
 
-**DevOps & Runtime**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Gunicorn](https://img.shields.io/badge/Gunicorn-499848?style=flat-square)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-111827?style=flat-square)
-
-**Testing, Observability, Tools**  
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![pytest-django](https://img.shields.io/badge/pytest--django-0C4B33?style=flat-square)
-![Sentry](https://img.shields.io/badge/Sentry-362D59?style=flat-square&logo=sentry&logoColor=white)
-![python-json-logger](https://img.shields.io/badge/structured_logging-python--json--logger-374151?style=flat-square)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
+Also contributed to [Aman AI](https://github.com/amanai-kz/aman-ai), a medical AI platform: consultation reports, PDF export, lab results parsing (RU/KZ).
 
 ## Experience
-**Future.AI — Developer / Integration Engineer (19 месяцев)**  
-- Разработка и интеграция AI-решений и backend-сервисов.
-- Проектирование и внедрение REST API.
-- Реализация интеграционных модулей, работа с внешними API и автоматизация процессов.
 
-**Freelance Developer (1 год)**  
-- Бизнес-боты, веб-приложения, REST API и сайты под задачи клиентов.
-- Автоматизация процессов и внедрение AI-функциональности в бизнес-сценарии.
-- Ведение проектов от ТЗ до production.
+**Future.AI**, Developer / Integration Engineer · 19 months<br/>
+AI solutions and backend services, REST API design, integrations with external APIs, process automation.
 
-**AGI Center — Backend/Web Developer Intern (1.5 месяца)**  
-- Реализация frontend+backend задач и работа с REST API.
-- Поддержка командных процессов разработки.
-- Контекст проектов: genetic/healthcare.
+**Freelance**, Developer · 1 year<br/>
+Business bots, web apps, REST APIs and websites for clients, from spec to production.
 
-## Featured Projects
-| Project | What it is | Stack/Focus | Link |
-|---|---|---|---|
-| Job-Application-CRM | Django-based personal tracker for job applications, follow-ups, analytics, reminders | Django, REST, analytics | [Repo](https://github.com/Oryntai/Job-Application-CRM) |
-| MalwareProjectpsy | Интерактивное приложение по спортивной психологии (backend + Android/Kotlin часть) | Backend + Android/Kotlin | [Repo](https://github.com/Oryntai/MalwareProjectpsy) |
-| reminderbot | Бот для напоминаний | Bot automation | [Repo](https://github.com/Oryntai/reminderbot) |
-| Hackaton | Browser-agent backend (FastAPI/Uvicorn + Playwright + LLM интеграция) | FastAPI, Playwright, LLM | [Repo](https://github.com/Oryntai/Hackaton) |
-| HackhatonQazCode | Репозиторий проекта QazCode hackathon | Hackathon project | [Repo](https://github.com/Oryntai/HackhatonQazCode) |
+**AGI Center**, Backend/Web Developer Intern · 1.5 months<br/>
+Frontend and backend tasks on genetics and healthcare projects.
 
-[![Job-Application-CRM Pin](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=Oryntai&repo=Job-Application-CRM&theme=transparent)](https://github.com/Oryntai/Job-Application-CRM)
-[![MalwareProjectpsy Pin](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=Oryntai&repo=MalwareProjectpsy&theme=transparent)](https://github.com/Oryntai/MalwareProjectpsy)
-[![Hackaton Pin](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=Oryntai&repo=Hackaton&theme=transparent)](https://github.com/Oryntai/Hackaton)
+## Stack
 
-## Education & Languages
-- **Education:** Astana IT University — Bachelor's Degree in Information Security (Sep 2023 – Jun 2026)
-- **Languages:** Kazakh (Native), Russian (Fluent), English (B2 Upper-Intermediate)
+<!-- assets/stack.svg is a snapshot of https://skillicons.dev/icons?i=py,fastapi,django,postgres,redis,rabbitmq,docker,nginx,linux,githubactions,ts,nodejs,react,vue,nuxtjs,tailwind,pytorch,opencv&perline=9 -->
+<img src="assets/stack.svg" alt="Python, FastAPI, Django, PostgreSQL, Redis, RabbitMQ, Docker, Nginx, Linux, GitHub Actions, TypeScript, Node.js, React, Vue, Nuxt, Tailwind, PyTorch, OpenCV" />
 
-## Contacts
-- Email: [pazylbekovoryntai@gmail.com](mailto:pazylbekovoryntai@gmail.com)
-- Telegram: [@oryntaivez](https://t.me/oryntaivez)
+**AI:** OpenAI, Claude (Agent SDK, MCP), Gemini · RAG with ChromaDB · browser agents with Playwright<br/>
+**Also:** SQLAlchemy, Alembic, Pydantic, Celery, pytest, React Native (Expo)
+
+## GitHub
+
+<!-- profile/*.svg are rendered daily by .github/workflows/profile-cards.yml -->
+<img src="profile/stats.svg" alt="GitHub stats" height="165" /> <img src="profile/top-langs.svg" alt="Top languages" height="165" />
+
+## Education
+
+**Astana IT University**, B.Sc. in Information Security, 2023–2026<br/>
+Diploma: [an intelligent system for monitoring the security of IoT devices](https://github.com/Oryntai/Diploma)
+
+**Languages:** Kazakh (native), Russian (fluent), English (B2)
 
 <details>
-<summary>WhatsApp / Phone</summary>
+<summary><b>По-русски</b></summary>
+<br/>
 
-+7 747 329 90 69
+Python-бэкенд-разработчик из Астаны. Пишу сервисы на FastAPI и Django и довожу продукты до конца: API и база, веб и мобильный клиент, деплой. Последнее время в основном встраиваю LLM в реальные продукты: агенты с инструментами, RAG с цитатами, MCP-серверы.
 
-</details>
+С нуля написал oqCRM, коммерческую CRM для учебных центров (FastAPI, PostgreSQL, React, Expo). Выпускник Astana IT University по специальности «Информационная безопасность» (2026).
 
-## GitHub Activity
-[![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Oryntai&show_icons=true&hide_title=true&include_all_commits=true&count_private=true&theme=transparent)](https://github.com/Oryntai)
-[![Streak Stats](https://streak-stats.demolab.com?user=Oryntai&theme=transparent&hide_border=true)](https://github.com/Oryntai)
-[![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Oryntai&layout=compact&theme=transparent)](https://github.com/Oryntai)
-
-<details>
-<summary>English Summary</summary>
-
-Backend Developer (Python: Django, FastAPI) and Integration Engineer based in Astana, Kazakhstan.  
-I build REST APIs, integration modules, and automation workflows with focus on reliability and delivery quality.
-
-**Stack:** Python, Django, FastAPI, REST APIs, PostgreSQL, Redis, Celery, Docker, pytest.  
-**Contact:** [pazylbekovoryntai@gmail.com](mailto:pazylbekovoryntai@gmail.com) • [@oryntaivez](https://t.me/oryntaivez)
+Связь: [pazylbekovoryntai@gmail.com](mailto:pazylbekovoryntai@gmail.com) · Telegram [@oryntaivez](https://t.me/oryntaivez)
 
 </details>
