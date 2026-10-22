@@ -13,8 +13,6 @@ I build backend services in Python and ship whole products around them. Most of 
 - **AI integrations:** agents with tools, RAG with citations, MCP servers
 - **End to end:** API and database, web and mobile clients, deployment
 
-<a href="https://oqcrm.kz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/oqcrm-dark.svg"><img alt="oqCRM — commercial CRM for education centers, built from scratch: leads, schedules, payments and teacher payroll. FastAPI, PostgreSQL, React, React Native." src="assets/oqcrm-light.svg" width="100%"></picture></a>
-
 ## Featured projects
 
 <p align="center">
@@ -51,7 +49,7 @@ I build backend services in Python and ship whole products around them. Most of 
 
 Python-бэкенд-разработчик из Астаны. Пишу сервисы на FastAPI и Django и довожу продукты до конца: API и база, веб и мобильный клиент, деплой. Последнее время в основном встраиваю LLM в реальные продукты: агенты с инструментами, RAG с цитатами, MCP-серверы.
 
-С нуля написал oqCRM, коммерческую CRM для учебных центров (FastAPI, PostgreSQL, React, Expo). Выпускник Astana IT University по специальности «Информационная безопасность» (2026).
+Выпускник Astana IT University по специальности «Информационная безопасность» (2026).
 
 Связь: [pazylbekovoryntai@gmail.com](mailto:pazylbekovoryntai@gmail.com) · Telegram [@oryntaivez](https://t.me/oryntaivez)
 

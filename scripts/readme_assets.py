@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Renders the SVG assets shown in README.md.
 
-    python3 scripts/readme_assets.py static   hero, contact buttons, spotlight, project cards, stack, timeline
+    python3 scripts/readme_assets.py static   hero, contact buttons, project cards, stack, timeline
     python3 scripts/readme_assets.py stats    activity panel from the GitHub GraphQL API (needs GITHUB_TOKEN)
 
 Each asset is written as assets/<name>-light.svg and assets/<name>-dark.svg, and README.md
@@ -380,47 +380,6 @@ def button(t, theme, kind):
     return document(W, H, f"{label}: {value}", body)
 
 
-def spotlight(t, theme):
-    W, H = 1280, 244
-    hue = t["accent"]
-    defs = (
-        f'<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{hue}" stop-opacity="0.9"/>'
-        f'<stop offset="0.45" stop-color="{t["border"]}"/><stop offset="1" stop-color="{t["border"]}"/></linearGradient>'
-        f'<linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/>'
-        f'<stop offset="1" stop-color="#0369a1"/></linearGradient>'
-        f'<radialGradient id="glow"><stop offset="0" stop-color="{t["glow_a"]}" stop-opacity="{t["glow_opacity"] * 0.6:.2f}"/>'
-        f'<stop offset="1" stop-color="{t["glow_a"]}" stop-opacity="0"/></radialGradient>'
-        f'<clipPath id="clip"><rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="24"/></clipPath>'
-    )
-    b = [
-        f'<rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="24" fill="{t["surface"]}"/>',
-        f'<g clip-path="url(#clip)"><circle cx="{W - 60}" cy="10" r="320" fill="url(#glow)"/></g>',
-        f'<rect x="2" y="2" width="{W - 4}" height="{H - 4}" rx="24" fill="none" stroke="url(#edge)" stroke-width="2"/>',
-        '<rect x="40" y="40" width="76" height="76" rx="22" fill="url(#tile)"/>',
-        icon("lucide:graduation-cap", 57, 57, 42, "#ffffff"),
-        text(144, 68, "COMMERCIAL PRODUCT · CLOSED SOURCE", 16, hue, mono=True, spacing=1.6),
-        text(W - 74, 68, "oqcrm.kz", 18, t["muted"], mono=True, anchor="end"),
-        icon("lucide:arrow-up-right", W - 66, 50, 22, t["muted"]),
-        text(144, 116, "oqCRM", 42, t["text"], weight=700),
-    ]
-    sub_x = 144 + text_w("oqCRM", 42, bold=True) + 16
-    b.append(text(sub_x, 116, "CRM for education centers", 28, t["muted"], weight=500))
-    desc = "Built from scratch: leads, schedules, payments and teacher payroll in one system."
-    if 144 + text_w(desc, 22) > W - 40:
-        warn("spotlight description may overflow")
-    b.append(text(144, 160, desc, 22, t["muted"]))
-    x = 144
-    for spec, label in [("fastapi", "FastAPI"), ("postgresql", "PostgreSQL"), ("react", "React"),
-                        ("expo", "React Native")]:
-        svg, w = pill(x, 184, label, t, h=40, size=18, spec=spec)
-        b.append(svg)
-        x += w + 10
-    b.append(text(W - 44, 210, "web + mobile apps", 17, t["faint"], mono=True, anchor="end"))
-    title = ("oqCRM — commercial CRM for education centers, built from scratch: leads, schedules, payments and "
-             "teacher payroll. FastAPI, PostgreSQL, React, React Native. oqcrm.kz")
-    return document(W, H, title, "".join(b), defs)
-
-
 def card(t, theme, p, compact=False):
     hue = HUES[p["hue"]][0 if theme == "light" else 1]
     W, m = 540, 6
@@ -551,7 +510,6 @@ def build_static():
         write("hero", theme, hero(t, theme))
         write("btn-email", theme, button(t, theme, "email"))
         write("btn-telegram", theme, button(t, theme, "telegram"))
-        write("oqcrm", theme, spotlight(t, theme))
         for p in FEATURED:
             write(f"card-{p['slug']}", theme, card(t, theme, p))
         for p in COMPACT:
